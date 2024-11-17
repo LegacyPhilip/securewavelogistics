@@ -1,0 +1,23 @@
+.tracking-section {
+  background-color: #f7f8fa; /* Matches the background color */
+}
+
+.tracking-section h1 {
+  color: #fa4d56; /* Matches the heading color */
+}
+
+.tracking-section h2 {
+  font-size: 1.8rem;
+}
+
+.tracking-section p {
+  color: #555; /* Neutral text color */
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 5px;
+}
