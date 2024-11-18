@@ -21,3 +21,47 @@
   font-size: 0.95rem;
   border-radius: 5px;
 }
+
+/* Feature Box Styles */
+.feature-box {
+  padding: 20px;
+  border: none;
+  background: none;
+}
+
+/* Feature Title Styles */
+.feature-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+/* Feature Description Styles */
+.feature-description {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* Image Alignment */
+.feature-box img {
+  width: 50;
+}
+.sidebar {
+  font-family: Arial, sans-serif;
+  position: relative;
+  /* margin-left: %; Needed for positioning child elements */
+}
+
+.sidebar-item {
+  font-size: 4rem;
+  opacity: 0; /* Start invisible */
+  transform: translateY(30px); /* Start position: floated below */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth float and fade animation */
+  position: absolute; /* Stack items on top of each other */
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+}

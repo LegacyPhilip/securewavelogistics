@@ -92,9 +92,30 @@
         <!-- Right Section with Brand Names -->
         <div
           class="col-lg-4 d-none d-lg-flex flex-column align-items-center justify-content-center sidebar"
-          style="font-size: 30px"
+          style="
+            font-size: 90px;
+            width: 30% !important;
+            text-align: center !important;
+            margin-top: 10% !important;
+          "
         >
-          <p class="my-2 sidebar-item">Etsy</p>
+          <p
+            style="
+              font-size: 10px !important;
+              margin-left: 4% !important;
+              margin-top: -30% !important;
+              text-align: center;
+              width: 80% !important;
+            "
+            class="px-4"
+          >
+            Explore the most trusted and widely used tracking solutions, all in
+            one place. Stay informed with seamless tracking experiences tailored
+            for your logistics needs
+          </p>
+          <p class="my-2 sidebar-item" style="margin-left: 14% !important">
+            Etsy
+          </p>
           <p class="my-2 sidebar-item">AliExpress</p>
           <p class="my-2 sidebar-item">Amazon</p>
           <p class="my-2 sidebar-item">eBay</p>
@@ -123,8 +144,32 @@
               translated into your language again.
             </p>
             <div>
-              <button class="btn btn-danger me-2">Supported couriers</button>
-              <button class="btn btn-danger">See all features</button>
+              <button
+                class="btn me-2"
+                style="
+                  background: linear-gradient(
+                    to bottom right,
+                    #df9e28,
+                    #dea12e
+                  );
+                  color: white;
+                "
+              >
+                Supported couriers
+              </button>
+              <button
+                class="btn"
+                style="
+                  background: linear-gradient(
+                    to bottom right,
+                    #df9e28,
+                    #dea12e
+                  );
+                  color: white;
+                "
+              >
+                See all features
+              </button>
             </div>
           </div>
           <!-- Image Content -->
@@ -139,15 +184,83 @@
       </div>
     </section>
 
+    <section class="history">
+      <div class="container py-5">
+        <div class="row text-center">
+          <!-- Feature 1 -->
+          <div class="col-md-4">
+            <div class="feature-box">
+              <img
+                src="images/maps.png"
+                alt="Map Icon"
+                class="img-fluid mb-3 feature-image"
+                width="90"
+              />
+              <h4 class="feature-title">Automatic courier detection</h4>
+              <p class="feature-description">
+                To help you save time, our algorithm automatically detects the
+                courier that took charge of your parcel - but at the same time,
+                this does not prevent you from manually choosing the courier you
+                want to get information from.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-box">
+              <img
+                src="images/scouriers.png"
+                alt="Courier Icon"
+                class="img-fluid mb-3 feature-image"
+                width="90"
+              />
+              <h4 class="feature-title">Over 1200 supported couriers</h4>
+              <p class="feature-description">
+                This tool allows you to track packages from over 200 different
+                countries covered by over 1200 couriers and used by the biggest
+                eCommerce companies like Amazon, Ebay, Walmart, Etsy, and
+                Target.
+              </p>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+
+          <!-- Feature 3 -->
+          <div class="col-md-4">
+            <div class="feature-box">
+              <img
+                src="images/email.png"
+                alt="Email Icon"
+                class="img-fluid mb-3 feature-image"
+                width="90"
+              />
+              <h4 class="feature-title">Email alerts on status change</h4>
+              <p class="feature-description">
+                In addition to tracking packages here on the website, you can
+                also enable email notifications to stay informed about the
+                progress of your order, as well as the location of your package
+                each time it is updated.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script>
-      // JavaScript to cycle through sidebar items and highlight them
+      // JavaScript to cycle through sidebar items with float-in effect
       const sidebarItems = document.querySelectorAll(".sidebar-item");
       let currentIndex = 0;
 
       function highlightItem() {
-        // Reset all items to dark color
+        // Reset all items to float out
         sidebarItems.forEach((item, index) => {
-          item.style.color = index === currentIndex ? "white" : "#555";
+          if (index === currentIndex) {
+            item.style.opacity = "1"; // Fade in
+            item.style.transform = "translateY(0)"; // Float to its normal position
+          } else {
+            item.style.opacity = "0"; // Fade out
+            item.style.transform = "translateY(30px)"; // Float downward (offscreen)
+          }
         });
 
         // Move to the next item, loop back to the first if at the end
@@ -156,7 +269,7 @@
 
       // Initial highlight and set interval
       highlightItem();
-      setInterval(highlightItem, 5000);
+      setInterval(highlightItem, 5000); // Change every 5 seconds
     </script>
   </body>
 </html>
