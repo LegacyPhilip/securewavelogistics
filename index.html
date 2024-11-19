@@ -32,11 +32,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Couriers</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Integrate to your website</a>
+              <a class="nav-link" href="#">Start Tracking</a>
             </li>
             <li class="nav-item">
               <a class="nav-link btn btn-outline-dark" href="#">Sign-in/Up</a>
@@ -48,17 +46,29 @@
 
     <!-- Main Content -->
     <div
-      class="container-fluid position-relative"
+      class="container-fluid"
       style="
-        background: linear-gradient(to bottom right, #df9e28, #dea12e);
+        background: linear-gradient(
+            to bottom right,
+            rgba(40, 156, 223, 0.8),
+            rgba(9, 140, 221, 0.8)
+          ),
+          url('images/tracking.png') no-repeat center center fixed;
+        background-size: cover;
         color: white;
         min-height: 100vh;
       "
     >
       <div class="row">
         <!-- Main Section -->
-        <div class="col-lg-8 text-center py-5">
-          <h1 class="display-4 mb-4">
+        <div
+          class="col-lg-12 text-center py-5"
+          style="margin-top: 5% !important"
+        >
+          <h1
+            class="display-4 mb-4"
+            style="font-size: 30px !important; font-weight: bolder"
+          >
             Package tracking made easy, you just need a tracking number!
           </h1>
           <form class="mb-4 d-flex justify-content-center">
@@ -77,8 +87,11 @@
           <p>Then send the form by pressing <b>Enter</b></p>
 
           <!-- Supporting Text -->
-          <div class="mt-4 px-4">
-            <p>
+          <div
+            class="mt-4 px-4"
+            style="width: 60% !important; margin-left: 20% !important"
+          >
+            <p style="font-size: 15px">
               Track my package has never been that easy with this global parcel
               tracking tool allowing you to track parcels from any post office.
               A powerful universal parcel tracking system that will provide you
@@ -86,40 +99,44 @@
               international courier such as China Post, Speedpak, 4PX Express,
               Amazon Logistics TBA, EMS ePacket, and more.
             </p>
+            <div class="sidebar">
+              <p class="my-2 sidebar-item" style="margin-left: 14% !important">
+                <img
+                  src="images/walmart.png"
+                  alt=""
+                  class="img-fluid mb-3 feature-image"
+                  style="width: 50% !important; margin-left: 15% !important"
+                />
+              </p>
+              <p class="my-2 sidebar-item">
+                <img
+                  src="images/aliexpress.png"
+                  alt=""
+                  class="img-fluid mb-3 feature-image"
+                  style="width: 45% !important; margin-left: 25% !important"
+                />
+              </p>
+              <p class="my-2 sidebar-item">
+                <img
+                  src="images/amazon.png"
+                  alt=""
+                  class="img-fluid mb-3 feature-image"
+                  style="width: 40% !important; margin-left: 25% !important"
+                />
+              </p>
+              <p class="my-2 sidebar-item">
+                <img
+                  src="images/ebay.png"
+                  alt=""
+                  class="img-fluid mb-3 feature-image"
+                  style="width: 35% !important; margin-left: 25% !important"
+                />
+              </p>
+            </div>
           </div>
         </div>
 
         <!-- Right Section with Brand Names -->
-        <div
-          class="col-lg-4 d-none d-lg-flex flex-column align-items-center justify-content-center sidebar"
-          style="
-            font-size: 90px;
-            width: 30% !important;
-            text-align: center !important;
-            margin-top: 10% !important;
-          "
-        >
-          <p
-            style="
-              font-size: 10px !important;
-              margin-left: 4% !important;
-              margin-top: -30% !important;
-              text-align: center;
-              width: 80% !important;
-            "
-            class="px-4"
-          >
-            Explore the most trusted and widely used tracking solutions, all in
-            one place. Stay informed with seamless tracking experiences tailored
-            for your logistics needs
-          </p>
-          <p class="my-2 sidebar-item" style="margin-left: 14% !important">
-            Etsy
-          </p>
-          <p class="my-2 sidebar-item">AliExpress</p>
-          <p class="my-2 sidebar-item">Amazon</p>
-          <p class="my-2 sidebar-item">eBay</p>
-        </div>
       </div>
     </div>
 
@@ -149,26 +166,16 @@
                 style="
                   background: linear-gradient(
                     to bottom right,
-                    #df9e28,
-                    #dea12e
+                    rgba(40, 156, 223, 0.8),
+                    rgba(9, 140, 221, 0.943)
                   );
                   color: white;
+                  width: 70% !important;
+                  border: 0 !important;
+                  border-radius: 0px;
                 "
               >
-                Supported couriers
-              </button>
-              <button
-                class="btn"
-                style="
-                  background: linear-gradient(
-                    to bottom right,
-                    #df9e28,
-                    #dea12e
-                  );
-                  color: white;
-                "
-              >
-                See all features
+                Get Started
               </button>
             </div>
           </div>
