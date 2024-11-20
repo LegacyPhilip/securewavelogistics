@@ -1,3 +1,12 @@
+* {
+  font-family: "Tw Cen MT", "Century Gothic", "Arial", sans-serif;
+
+  font-family: "Tw Cen MT", "Helvetica", "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
 .tracking-section {
   background-color: #f7f8fa; /* Matches the background color */
 }

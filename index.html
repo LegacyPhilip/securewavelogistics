@@ -10,12 +10,95 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/styles.css" />
+
+    <style>
+      * {
+        font-family: "Tw Cen MT", "Helvetica", "Arial", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+
+      .tracking-section {
+        background-color: #f7f8fa; /* Matches the background color */
+      }
+
+      .tracking-section h1 {
+        color: #fa4d56; /* Matches the heading color */
+      }
+
+      .tracking-section h2 {
+        font-size: 1.8rem;
+      }
+
+      .tracking-section p {
+        color: #555; /* Neutral text color */
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+
+      .btn {
+        font-weight: 600;
+        font-size: 0.95rem;
+        border-radius: 5px;
+      }
+
+      /* Feature Box Styles */
+      .feature-box {
+        padding: 20px;
+        border: none;
+        background: none;
+      }
+
+      /* Feature Title Styles */
+      .feature-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #2a2a2a;
+        margin-bottom: 10px;
+      }
+
+      /* Feature Description Styles */
+      .feature-description {
+        font-size: 14px;
+        color: #555555;
+        line-height: 1.6;
+      }
+
+      /* Image Alignment */
+      .feature-box img {
+        width: 50;
+      }
+      .sidebar {
+        font-family: Arial, sans-serif;
+        position: relative;
+        /* margin-left: %; Needed for positioning child elements */
+      }
+
+      .sidebar-item {
+        font-size: 4rem;
+        opacity: 0; /* Start invisible */
+        transform: translateY(30px); /* Start position: floated below */
+        transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth float and fade animation */
+        position: absolute; /* Stack items on top of each other */
+        left: 0;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Secured Wave Logistics</a>
+        <a class="navbar-brand" href="#"
+          ><img
+            src="images/logo.png"
+            alt=""
+            srcset=""
+            style="width: 25% !important"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -58,11 +141,12 @@
       style="
         background: linear-gradient(
             to bottom right,
-            rgba(40, 156, 223, 0.8),
-            rgba(9, 140, 221, 0.8)
+            rgba(40, 156, 223, 0.902),
+            rgba(9, 140, 221, 0.889)
           ),
-          url('images/tracking.png') no-repeat center center fixed;
+          url('images/map2.jpg') no-repeat center center fixed;
         background-size: cover;
+
         color: white;
         min-height: 100vh;
       "
@@ -71,7 +155,7 @@
         <!-- Main Section -->
         <div
           class="col-lg-12 text-center py-5"
-          style="margin-top: 5% !important"
+          style="margin-top: 10% !important"
         >
           <h1
             class="display-4 mb-4"
@@ -85,8 +169,14 @@
               class="form-control w-50"
               placeholder="Enter up to 10 tracking numbers..."
               aria-label="Tracking number input"
+              style="padding: 15px !important"
             />
-            <button type="submit" class="btn btn-light ms-2">&#10140;</button>
+            <a
+              href="http://securewavelogicstics.wuaze.com"
+              class="btn btn-light ms-2"
+              >&#10140;</a
+            >
+            <!-- <button type="submit" ></button> -->
           </form>
           <p>
             To track several parcels, separate them with <b>Space</b>, <b>,</b>,
@@ -99,14 +189,6 @@
             class="mt-4 px-4"
             style="width: 60% !important; margin-left: 20% !important"
           >
-            <p style="font-size: 15px" class="">
-              Track my package has never been that easy with this global parcel
-              tracking tool allowing you to track parcels from any post office.
-              A powerful universal parcel tracking system that will provide you
-              with shipment info by tracking number lookup from any
-              international courier such as China Post, Speedpak, 4PX Express,
-              Amazon Logistics TBA, EMS ePacket, and more.
-            </p>
             <div class="sidebar">
               <p class="my-2 sidebar-item" style="margin-left: 14% !important">
                 <img
@@ -152,7 +234,7 @@
       <div class="container d-flex align-items-center">
         <div class="row w-100">
           <!-- Text Content -->
-          <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <div class="col-lg-6 d-flex flex-column justify-content-center mt-5">
             <h2 class="fw-bold">All-in-one international tracking for</h2>
             <h1 class="display-5 fw-bold text-primary">
               any post office tracking
@@ -203,13 +285,14 @@
       <div class="container py-5">
         <div class="row text-center">
           <!-- Feature 1 -->
-          <div class="col-md-4">
+          <div class="col-md-4" style="margin-top: -2% !important">
             <div class="feature-box">
               <img
                 src="images/maps.png"
                 alt="Map Icon"
                 class="img-fluid mb-3 feature-image"
                 width="90"
+                style="margin-top: -1%"
               />
               <h4 class="feature-title">Automatic courier detection</h4>
               <p class="feature-description">
@@ -220,13 +303,14 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mt-4">
             <div class="feature-box">
               <img
                 src="images/scouriers.png"
                 alt="Courier Icon"
                 class="img-fluid mb-3 feature-image"
                 width="90"
+                style="margin-top: -2%"
               />
               <h4 class="feature-title">Over 1200 supported couriers</h4>
               <p class="feature-description">
@@ -240,13 +324,14 @@
           <!-- Feature 2 -->
 
           <!-- Feature 3 -->
-          <div class="col-md-4">
+          <div class="col-md-4" style="margin-top: -1%">
             <div class="feature-box">
               <img
                 src="images/email.png"
                 alt="Email Icon"
                 class="img-fluid mb-3 feature-image"
                 width="90"
+                style="margin-top: -1%"
               />
               <h4 class="feature-title">Email alerts on status change</h4>
               <p class="feature-description">
