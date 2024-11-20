@@ -1,196 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Secured Wave Logistics</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles/styles.css" />
-  <style>
-    /* General Body Styling */
-    body {
-      font-family: "Tw Cen MT", "Helvetica", "Arial", sans-serif;
-      line-height: 1.6;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secured Wave Logistics</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* General Body Styling */
+      body {
+        font-family: "Tw Cen MT", "Helvetica", "Arial", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
 
-    /* Navbar Styling */
-    .navbar-brand {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    .nav-link {
-      font-size: 1rem;
-      margin: 0 10px;
-    }
+      /* Navbar Styling */
+      .navbar-brand {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .nav-link {
+        font-size: 1.1rem;
+        margin: 0 10px;
+      }
 
-    /* Main Section */
-    .container-fluid {
-      background: linear-gradient(to bottom right, rgba(40, 156, 223, 0.8), rgba(9, 140, 221, 0.8)),
-        url('images/tracking.png') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      min-height: 100vh;
-    }
+      /* Hero Section */
+      .container-fluid {
+        background: linear-gradient(
+            to bottom right,
+            rgba(40, 156, 223, 0.9),
+            rgba(9, 140, 221, 0.9)
+          ),
+          url('images/tracking.png') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+      }
 
-    .display-4 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
+      .display-4 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+      }
 
-    form input {
-      font-size: 1.2rem;
-      padding: 0.8rem;
-    }
-    form button {
-      font-size: 1.2rem;
-      padding: 0.8rem 1.5rem;
-    }
+      .form-control {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+      }
 
-    /* Supporting Text */
-    .main-text p {
-      font-size: 1.25rem;
-      margin-bottom: 0.8rem;
-    }
+      form button {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+      }
 
-    /* Sidebar Items */
-    .sidebar img {
-      width: 60%;
-      margin: 0 auto;
-      display: block;
-    }
+      .main-text p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+      }
 
-    /* Section Styling */
-    .tracking-section h1 {
-      font-size: 2.25rem;
-      font-weight: bold;
-    }
+      /* Tracking Section */
+      .tracking-section {
+        padding: 4rem 2rem;
+        text-align: center;
+      }
 
-    .tracking-section h2 {
-      font-size: 1.75rem;
-    }
+      .tracking-section h1 {
+        font-size: 2.25rem;
+        font-weight: bold;
+      }
 
-    .tracking-section p {
-      font-size: 1.2rem;
-      line-height: 1.8;
-    }
+      .tracking-section h2 {
+        font-size: 1.75rem;
+      }
 
-    .btn {
-      font-size: 1rem;
-      padding: 0.8rem 1.5rem;
-    }
+      .tracking-section p {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        line-height: 1.8;
+      }
 
-    /* Feature Section */
-    .feature-box {
-      text-align: center;
-      margin: 2rem 0;
-    }
+      .btn {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem;
+      }
 
-    .feature-box img {
-      margin-bottom: 1rem;
-    }
+      /* Features Section */
+      .feature-box {
+        text-align: center;
+        margin: 2rem 0;
+      }
 
-    .feature-box h4 {
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
+      .feature-box img {
+        margin-bottom: 1rem;
+        width: 70px;
+      }
 
-    .feature-box p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
+      .feature-box h4 {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
 
-    /* Footer or End Section */
-    footer {
-      background: #f8f9fa;
-      color: #6c757d;
-      text-align: center;
-      padding: 1rem 0;
-    }
-  </style>
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      .feature-box p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      /* Footer Section */
+      footer {
+        background: #f8f9fa;
+        color: #6c757d;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Secured Wave Logistics</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://securewavelogicstics.wuaze.com">Couriers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://securewavelogicstics.wuaze.com">Start Tracking</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-outline-dark"
+                href="http://securewavelogicstics.wuaze.com"
+                >Sign-in/Up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Secured Wave Logistics</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="http://securewavelogicstics.wuaze.com">Couriers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://securewavelogicstics.wuaze.com">Start Tracking</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link btn btn-outline-dark"
-              href="http://securewavelogicstics.wuaze.com"
-              >Sign-in/Up</a
-            >
-          </li>
-        </ul>
+      <div>
+        <h1 class="display-4">
+          Package tracking made easy, you just need a tracking number!
+        </h1>
+        <form class="d-flex justify-content-center mb-4">
+          <input
+            type="text"
+            class="form-control w-50"
+            placeholder="Enter up to 10 tracking numbers..."
+            aria-label="Tracking number input"
+          />
+          <button type="submit" class="btn btn-light ms-2">&#10140;</button>
+        </form>
+        <p class="main-text">
+          To track several parcels, separate them with <b>Space</b>, <b>,</b>, or <b>|</b>.
+          Then send the form by pressing <b>Enter</b>.
+        </p>
       </div>
     </div>
-  </nav>
 
-  <!-- Main Section -->
-  <div class="container-fluid text-center d-flex align-items-center">
-    <div class="col-lg-12 py-5">
-      <h1 class="display-4 mb-4">
-        Package tracking made easy, you just need a tracking number!
-      </h1>
-      <form class="d-flex justify-content-center mb-4">
-        <input
-          type="text"
-          class="form-control w-50"
-          placeholder="Enter up to 10 tracking numbers..."
-          aria-label="Tracking number input"
-        />
-        <button type="submit" class="btn btn-light ms-2">&#10140;</button>
-      </form>
-      <p class="main-text">
-        To track several parcels, separate them with <b>Space</b>, <b>,</b>, or <b>|</b>. Then send the form by pressing <b>Enter</b>.
+    <!-- Tracking Section -->
+    <section class="tracking-section">
+      <h2>All-in-one international tracking for</h2>
+      <h1 class="text-primary">any post office tracking</h1>
+      <p>
+        This "track my package" universal tracking tool was created to make it easier than
+        ever before to track all of your international packages by tracking number lookup.
       </p>
-    </div>
-  </div>
+      <a href="#" class="btn btn-primary">Get Started</a>
+    </section>
 
-  <!-- Tracking Section -->
-  <section class="tracking-section py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>All-in-one international tracking for</h2>
-          <h1 class="text-primary">any post office tracking</h1>
-          <p>
-            This "track my package" universal tracking tool was created to make it easier than ever before to track all of your international packages by tracking number lookup.
-          </p>
-          <a href="#" class="btn btn-primary">Get Started</a>
-        </div>
-        <div class="col-lg-6 text-center">
-          <img src="images/airplane.png" alt="Airplane" class="img-fluid">
+    <!-- Features Section -->
+    <section>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 feature-box">
+            <img src="images/maps.png" alt="Map Icon" />
+            <h4>Automatic courier detection</h4>
+            <p>
+              Our algorithm automatically detects the courier in charge of your parcel.
+            </p>
+          </div>
+          <div class="col-md-4 feature-box">
+            <img src="images/scouriers.png" alt="Courier Icon" />
+            <h4>Over 1200 supported couriers</h4>
+            <p>
+              Track packages from over 200 countries with support for 1200 couriers.
+            </p>
+          </div>
+          <div class="col-md-4 feature-box">
+            <img src="images/email.png" alt="Email Icon" />
+            <h4>Email alerts on status change</h4>
+            <p>
+              Enable email notifications to stay updated on your package's status.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Secured Wave Logistics. All rights reserved.</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Secured Wave Logistics. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
